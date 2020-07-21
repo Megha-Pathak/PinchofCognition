@@ -4,12 +4,17 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: ` Megha Pathak`,
+    siteTitleAlt: `Home | Megha Pathak`,
+    siteDescription: `Portfolio Site.`,
+    siteUrl: `https://learnwithmegha.netlify.com/`,
+    siteLanguage: `en`,
+    siteImage: `/logo.png`,
+    author: `@meghapathak`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
-      // See the theme's README for all available options
       options: {
         navigation: [
           {
@@ -24,12 +29,16 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/Megha_Pathak_`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/megha--pathak`,
           },
+          {
+            name: 'Instagram',
+            url: 'https://www.instagram.com/megha.pathak_/'
+          }
         ],
       },
     },
@@ -66,5 +75,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
 }
